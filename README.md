@@ -22,7 +22,7 @@ I accomplished three main tasks:
 - Specified data types.
 - Set primary keys and foreign keys.
 
-3. [Data Analysis using PostgreSQL](#Data-Analysis - PostgreSQL): 
+2. [Data Analysis](#Data-Analysis):  
 - Analyze the data to identify possible fraudulent transactions trends data, and develop a report of your observations.
 - Used the count function, inner join clause, group by statement and where clause to combine, extract and analysis the data through a series of quereies.
 - Created views of each query.
@@ -42,8 +42,7 @@ _ Plot both customers and then combine the data to better analysis it.
 - There are at least one outlier per month during this timeframe except in February.
 
 6. [Data Analysis using Python Challenge](#Data-Analysis - Python - Challenge):
-- Another approach to identifying fraudulent transactions is to look for outliers in the data.
-- Wrote functions that locate outliers using standard deviation and interquartile range
+- Wrote functions that located outliers using standard deviation and interquartile range
 
 ---
 
