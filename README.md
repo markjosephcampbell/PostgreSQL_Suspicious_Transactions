@@ -18,16 +18,32 @@ I accomplished three main tasks:
 
 2. [Data Engineering](#Data-Engineering): 
 - Created a database schema on PostgreSQL and populated the database from the CSV files provided.
-- Created five tables: credit_card, card_holder, merchant, merchant_category and transactions
-- Specified data types
-- Set primary keys and foreign keys
+- Created five tables: credit_card, card_holder, merchant, merchant_category and transactions.
+- Specified data types.
+- Set primary keys and foreign keys.
 
-3. [Data Analysis](#Data-Analysis): 
+3. [Data Analysis- PostgreSQL ](#Data-Analysis - PostgreSQL): 
 - Analyze the data to identify possible fraudulent transactions trends data, and develop a report of your observations.
 - Used the count function, inner join clause, group by statement and where clause to combine, extract and analysis the data through a series of quereies.
-- Views of each query were created
-- There were some outliers in the data suggesting possible fraudelent activity
+- Created views of each query.
+- There were some outliers in the data suggesting possible fraudelent activity.
 - There is evidence which suggests fraud is more likely to happen in the early morning because customers are less likely to be monitoring their phone for alerts.
+
+4. [Data Analysis- Python - Part 1](#Data-Analysis - Python - Part 1):
+- Connect database to Python
+- Analyze two customers who may have been hacked by cardholder IDS: 2 and 18.
+-- Cardholder ID 2 does not appear to have been hacked. Cardholder ID 18 does appear to have been hacked.
+_ Plot both customers and then combine the data to better analysis it.
+
+5. [Data Analysis- Python - Part 2](#Data-Analysis - Python - Part 2):
+- Loaded the data of daily transactions from January to June 2018 for card holder 25 & wrote a query.
+- Created a dataframe from the query results.
+- Created a box plot of the results.
+- There are at least one outlier per month during this timeframe except in February.
+
+6. [Data Analysis- Python - Challenge](#Data-Analysis - Python - Challenge):
+- Another approach to identifying fraudulent transactions is to look for outliers in the data.
+- Wrote functions that locate outliers using standard deviation and interquartile range
 
 ---
 
@@ -39,46 +55,6 @@ I accomplished three main tasks:
 * [merchant_category.csv](Data/merchant_category.csv)
 * [transaction.csv](Data/transaction.csv)
 
-
-
-
-#### Part 2:
-
-Your CFO has also requested detailed trends data on specific card holders. Use the [starter notebook](Starter_Files/challenge.ipynb) to query your database and generate visualizations that supply the requested information as follows, then add your visualizations and observations to your markdown report:      
-
-* The two most important customers of the firm may have been hacked. Verify if there are any fraudulent transactions in their history. For privacy reasons, you only know that their cardholder IDs are 2 and 18.
-
-  * Using hvPlot, create a line plot representing the time series of transactions over the course of the year for each cardholder separately. 
-  
-  * Next, to better compare their patterns, create a single line plot that contains both card holders' trend data.  
-
-  * What difference do you observe between the consumption patterns? Does the difference suggest a fraudulent transaction? Explain your rationale.
-
-* The CEO of the biggest customer of the firm suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay quite expensive restaurant bills. Again, for privacy reasons, you know only that the cardholder ID in question is 25.
-
-  * Using Plotly Express, create a box plot, representing the expenditure data from January 2018 to June 2018 for cardholder ID 25.
-  
-  * Are there any outliers for cardholder ID 25? How many outliers are there per month?
-
-  * Do you notice any anomalies? Describe your observations and conclusions.
-
-### Challenge
-
-Another approach to identifying fraudulent transactions is to look for outliers in the data. Standard deviation or quartiles are often used to detect outliers.
-
-Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two Python functions:
-
-* One that uses standard deviation to identify anomalies for any cardholder.
-
-* Another that uses interquartile range to identify anomalies for any cardholder.
-
-For help with outliers detection, read the following articles:
-
-* [How to Calculate Outliers](https://www.wikihow.com/Calculate-Outliers)
-
-* [Removing Outliers Using Standard Deviation in Python](https://www.kdnuggets.com/2017/02/removing-outliers-standard-deviation-python.html)
-
-* [How to Use Statistics to Identify Outliers in Data](https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/)
 
 ### Submission
 
